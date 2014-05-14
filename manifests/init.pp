@@ -7,8 +7,6 @@ class zsh_notifier {
     source   => 'https://github.com/alloy/terminal-notifier/releases/download/1.5.0/terminal-notifier-1.5.0.zip',
   }
 
-  file { 
-
   repository { 'zsh-nofity-repo':
     provider => 'git',
     source   => 'marzocchi/zsh-notify',
