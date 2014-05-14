@@ -15,7 +15,7 @@ class zsh_notifier {
   }
 
   class {'zsh_notifier::config':
-    require => Repository['zsh_notify'],
+    require => Repository['zsh_notify-repo'],
   }
 
 }
