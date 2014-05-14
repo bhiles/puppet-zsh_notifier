@@ -10,7 +10,7 @@ class zsh_notifier {
   repository { 'zsh_notify_repo':
     provider => 'git',
     source   => 'marzocchi/zsh-notify',
-    path     => '/opt/boxen/zsh_notify',
+    path     => "${zsh_notifier::config::zsh_notify_dir}",
     require  => Package['terminal_notifier'],
   }
 
