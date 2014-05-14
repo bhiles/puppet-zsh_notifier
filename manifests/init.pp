@@ -2,7 +2,7 @@
 class zsh_notifier {
 
   package { 'terminal_notifier':
-    #ensure   => present,
+    ensure   => present,
     provider => 'compressed_app',
     source   => 'https://github.com/alloy/terminal-notifier/releases/tag/1.5.0',
   }
