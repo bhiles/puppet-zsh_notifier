@@ -14,4 +14,8 @@ class zsh_notifier {
     require  => Package['terminal_notifier'],
   }
 
+  class {'zsh_notifier::config':
+    require => Repository['zsh_notify'],
+  }
+
 }

@@ -9,7 +9,6 @@ class zsh_notifier::config {
 
   boxen::env_script { 'zsh_notifier':
     content  => template('zsh_notifier/env.sh.erb'),
-    require => Repository['zsh_notify'],
   }
 
   file { "${boxen::config::envdir}/zsh_notifier.sh":
